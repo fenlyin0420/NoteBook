@@ -1,13 +1,19 @@
 ![image](img1.png) 
 ## 本地提交与修改
-- `git add <file1 file2> ...` 将指定文件加入index，表明要跟踪他们
+
 - `git status` 查看工作区状态，如果工作区index所指向的文件与仓库中的相比有变化，会给出具体提示。
-- `git diff` 查看工作区详细的变化
+- `git add <file1 file2> ...` 将指定文件加入index，表明要跟踪他们
 - `git commit <file> [-a] [-m "xxx"]` 提交index中指定文件到本地仓库，-a表示提交index中所有文件，-m添加提交注释
+- `git reset --<opt> HEAD~1` 撤销最后一次提交，更改是否保留取决于选项
+	- `--soft`保留更改
+	- `--hard` 撤销更改
+- `git commit --amend` 修改最后一次提交的消息
 - `git rm <file>` 将文件从工作区和index区删除
 - `git reset` `git restore <file>` 回退版本并忽略修改。对某个文件修改后如果想要撤销，则应先reset，然后restore。
 - `git mv` 等价于`mv`
 - `git checkout --<file>` 将file加入index后，如果想撤销修改，也可以使用此命令
+- `git diff` 查看工作区详细的变化
+
 ## 日志
 
 `git log` 查看提交日志
@@ -53,7 +59,8 @@ git stash pop stash@{1}
 两个分支，如果对某个文件的 **同一个地方** 都进行了修改，然后各自提交，之后如果要合并两个分支(如temp->mster，temp合并到master分支)， git会不知道选择哪个修改，便会发生合并冲突，此时，需要手动编辑冲突文件，解决冲突。之后 `git add .` 、 `git merge --continue` 继续合并即可。
 
 ## 远程管理
-- `git push <remote> <branch>` 将当前分支推到远程仓库的指定分支
+- `git push <remote> <local_branch>[:<remote_branch>]` 将当前分支推到远程仓库的指定分支
+	- `-f | --force` 当远程与本地历史提交不一致时，此选项强制覆盖远程
 - `git pull <remote> <branch>` 将远程仓库的指定分支拉到本地
 - `git fetch <remote>` 成功抓取后需要合并，才可以到工作区：`git merge [<remote>/]<branch>` 表示将\[远程仓库\<remote>的]\<branch>分支合并当本地当前分支
 	- `--allow-unrelated-histories` 在合并阶段，加入这个选项和将无关历史合并到一起
@@ -75,7 +82,7 @@ git stash pop stash@{1}
 - 对于 private repo: `clone`, `pull`, `push` 操作均需要密码
 
 自动化操作免登录：使用git的 `credential.helper` 配置。
-- `store` 将用户名和口令以明文方式储存在 `~/git-credentials`当中
+- `store` 将用户名和口令以明文方式储存在 `~/.git-credentials`当中
 - `cache` 将用户名和口令暂时存在内存中，15分钟后消失
 - 使用凭据管理工具： `windows credential manager`, `git-credential-manager`等等。
 
@@ -91,7 +98,7 @@ git stash pop stash@{1}
 ## gitignore不起作用问题修复
 - 原因：当文件已被跟踪后，如果想要ignore，git将依然不会忽视，除非清除缓存：
 ``` shell
-git rm [-r] cached <file>
+git rm [-r] --cached <file>
 # -r 用于删除目录
 ```
 ## gitignore 配置
@@ -117,9 +124,7 @@ git rm [-r] cached <file>
 
 
 >[!warning]
->即使是以我的GitHub账号登录的，但如果我的git配置中，email配置的是另一个人的Github账号，那么将内容推送到Github中后，显示的贡献者也是另一个人。
-
-
+>即使是以我的GitHub账号登录的，但如果我的git配置中，email配置的是另一个人的Github账号，那么将内容推送到Github中后，显示的贡献者也是另一个人。但如果git没有配置email，那么将使用push时github认证的用户身份。
 
 
 # 理解

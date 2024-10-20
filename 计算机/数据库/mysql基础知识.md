@@ -130,6 +130,19 @@ SELECT <FIELD> FROM <TABLE_NAME> WHERE <CONDITION>
 | `NOT`         | 逻辑非，否定条件      | `WHERE NOT condition`                                               |
 | `LIMIT`       | 查询行数          | `WHERE LIMIT 10` 及 `WHERE LIMIT 20,10`                              |
 
+## 查询总结
+### 单表查询
+
+
+### 多表查询（连接查询）
+多表查询是先连接，再查询。
+`select [filed] form table1, table2 where <expr>;`
+将`table1`和`table2`以条件表达式`expr`连接。
+
+#### 几种特殊的连接
+通过`where`语句可以实现所有连接，几种常见的连接也有其各自的语句
+- `t1 LEFT OUTTER JOIN t2 ON(<expr>)`  左外连接
+
 
 # DCL
 
