@@ -13,32 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机/Web/前端/Vue/基础知识.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "基础知识"
-            }
-          },
-          {
-            "id": "7c84711dec9a39ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "知识索引.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "知识索引"
+              "title": "Untitled"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "netstat",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -160,10 +144,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "知识索引.md"
+                "file": "Untitled.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 知识索引"
+              "title": "Outline of Untitled"
             }
           },
           {
@@ -191,35 +175,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7c84711dec9a39ba",
+  "active": "3f2610d902cce45a",
   "lastOpenFiles": [
-    "计算机/Web/前端/Vue/基础知识.md",
-    "计算机/Web/前端/Vue/Vue文件组成.md",
     "知识索引.md",
-    "计算机/Web/后端/NodeJs/NPM.md",
+    "Untitled.md",
+    "论文查重原理.md",
+    "记录.md",
     "计算机/工具/Git/git基本操作.md",
+    "计算机/工具/Git/一些理解与心得.md",
+    "计算机/计算机网络/基础知识.md",
+    "计算机/程序设计语言/Powershell/命令.md",
+    "计算机/计算机网络/_resources/Pasted image 20241021111315.png",
+    "计算机/Web/前端/Vue/基础知识.md",
+    "计算机/计算机网络/FTP 连接案例.md",
+    "计算机/程序设计语言/Powershell/脚本语法.md",
     "计算机/程序设计语言/Batch/脚本语法.md",
     "计算机/程序设计语言/Batch/命令.md",
     "计算机/数据库/mysql基础知识.md",
-    "_resources/Pasted image 20241017235328.png",
-    "计算机/Web/前端/Javascript/经验、技巧.md",
-    "计算机/Web/前端/Javascript/基础知识.md",
-    "Untitled.md",
-    "计算机/Web/前端/Typescript/Base Sytax.md",
-    "计算机/Web/前端/Javascript/jQuery.md",
-    "计算机/Web/前端/Javascript/常用类、函数.md",
-    "计算机/Linux/linux 软件级知识.md",
-    "计算机/Linux/linux 系统与硬件级知识.md",
-    "计算机/Linux/linux 基础命令.md",
-    "计算机/Linux/kali渗透测试.md",
-    "计算机/Linux/Grub.md",
-    "计算机/Linux/渗透测试基本知识.md",
-    "计算机/Linux/Tips.md",
-    "计算机/程序设计语言/Java/Java基础知识.md",
-    "计算机/Web/密码学.md",
+    "学术/MATLAB/基础知识.md",
+    "学术/ChatGPT 数学建模Prompt.md",
+    "学术/数学建模.md",
+    "3D/3D基础.md",
+    "计算机/软件工程/软件设计过程.md",
+    "计算机/Cortex-M3内核.md",
+    "计算机/x86_64汇编.md",
     "计算机/学习.md",
-    "记录.md",
+    "Test.md",
     "word学习.md",
+    "计算机/Web/前端/Vue/Vue文件组成.md",
+    "计算机/Web/后端/NodeJs/NPM.md",
+    "_resources/Pasted image 20241017235328.png",
     "_resources/Pasted image 20241006202559.png",
     "_resources",
     "计算机/程序设计语言/Python/_resources/Pasted image 20241004160410.png",
@@ -235,7 +220,6 @@
     "3D/Blender/_resources/Pasted image 20240926200008.png",
     "计算机/Web/后端/框架",
     "基础课程/Untitled",
-    "计算机/前端/Excalidraw/Scripts/Downloaded/Auto Layout.svg",
     "计算机/Web/_resources",
     "AI绘图",
     "计算机/Web",
