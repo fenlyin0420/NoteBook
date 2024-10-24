@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "6bc1bd12a72697ed",
+        "id": "4a17db963935ed2d",
         "type": "tabs",
         "children": [
           {
-            "id": "3f2610d902cce45a",
+            "id": "22c63232cff71af7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "论文查重原理.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "论文查重原理"
             }
           }
         ]
@@ -144,10 +144,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "论文查重原理.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled"
+              "title": "Outline of 论文查重原理"
             }
           },
           {
@@ -175,13 +175,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3f2610d902cce45a",
+  "active": "22c63232cff71af7",
   "lastOpenFiles": [
     "知识索引.md",
     "Untitled.md",
+    "计算机/工具/Git/git基本操作.md",
+    "ComputerGraphics.md",
+    "Linux文件系统详解.md",
     "论文查重原理.md",
     "记录.md",
-    "计算机/工具/Git/git基本操作.md",
     "计算机/工具/Git/一些理解与心得.md",
     "计算机/计算机网络/基础知识.md",
     "计算机/程序设计语言/Powershell/命令.md",
@@ -202,8 +204,6 @@
     "计算机/学习.md",
     "Test.md",
     "word学习.md",
-    "计算机/Web/前端/Vue/Vue文件组成.md",
-    "计算机/Web/后端/NodeJs/NPM.md",
     "_resources/Pasted image 20241017235328.png",
     "_resources/Pasted image 20241006202559.png",
     "_resources",
