@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "论文查重原理.md",
+                "file": "知识索引.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "论文查重原理"
+              "title": "知识索引"
             }
           }
         ]
@@ -144,10 +144,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "论文查重原理.md"
+                "file": "知识索引.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 论文查重原理"
+              "title": "Outline of 知识索引"
             }
           },
           {
@@ -177,12 +177,12 @@
   },
   "active": "22c63232cff71af7",
   "lastOpenFiles": [
+    "git 简易教学.md",
+    "论文查重原理.md",
     "知识索引.md",
-    "Untitled.md",
     "计算机/工具/Git/git基本操作.md",
     "ComputerGraphics.md",
     "Linux文件系统详解.md",
-    "论文查重原理.md",
     "记录.md",
     "计算机/工具/Git/一些理解与心得.md",
     "计算机/计算机网络/基础知识.md",
