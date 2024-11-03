@@ -202,6 +202,12 @@ SHOW VARIABLES LIKE 'datadir';
      - **示例**：`GRANT SELECT, INSERT ON exampledb.* TO 'newuser'@'%' IDENTIFIED BY 'password';`
 
 # 修改用户密码
+- 8.0 之前
+```MySQL
+UPDATE mysq.user SET authentication_string = PASSWORD('123456') WHERE user = 'root';
+```
+
+- 8.0 之后
 ```MySQL
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
 ```

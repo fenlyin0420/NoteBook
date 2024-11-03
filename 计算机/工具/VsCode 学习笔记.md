@@ -3,9 +3,20 @@
 
 # settings.json file
 - `~\AppData\Roaming\Code\User\settings.json` 用户配置文件，设置中修改过的项目会保存在这个文件中，达到备份作用，没有修改过的项目，则无需保存，因为每个设置都有默认值。
-- `${workspace}\.vscode\settings.json` 工作区局部配置文件，只影响当前工作区，优先级大于全局配置。
+- `${workspace}\.vscode\settings.json` 工作区局部配置文件，只影响当前工作区，优先级大于用户配置。
 - vscode会在启动时以及启动后定期“执行”（触发事件应该还有很多）settings.json 和 工作区的settings.json，目的是实时更新设置。
 
+每个人都有自己的偏好，在使用VS Code进行开发时，都会根据自己的习惯来对VS Code进行**用户级别**的配置。
+但是当多人共同完成某个项目的时候，该项目会有一定的编码规范，如: 编辑某个语言时的设置，代码的缩进等等，这个时候就需要对该项目进行单独的**工作空间级别**的设置。
+
+更改默认用户设置与工作空间设置
+VS Code的设置文件为setting.json。用户设置的文件保存在如下目录：
+
+`Windows: %APPDATA%\Code\User\settings.json`
+
+`Linux: $HOME/.config/Code/User/settings.json`
+
+工作空间设置的文件保存在当前目录的.vscode文件夹下。
 
 # snippets 详解
 ### snippet defination
@@ -31,12 +42,11 @@ With `$name` or `${name:default}`, you can insert the value of a variable. With 
 - `${1|var1, var2, var3|}` you can select from the list, or assign a new value
 
 
-## .vscode
+# tasks 和 launch 文件
 - `task` 相当于批处理，自动化程序
 - `launch` 预定义的一些启动任务
 
-
-# tasks
+## tasks
 ```json
 {
     "version": "2.0.0",
@@ -73,7 +83,7 @@ With `$name` or `${name:default}`, you can insert the value of a variable. With 
 ```
 
 
-# launch
+## launch
 ```json
 {
     "configurations": [
