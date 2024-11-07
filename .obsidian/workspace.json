@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机/Linux/linux 软件级知识.md",
-                "mode": "preview",
+                "file": "计算机/Linux/linux 系统与硬件级知识.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "linux 软件级知识"
+              "title": "linux 系统与硬件级知识"
             }
           }
         ],
@@ -69,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "csp",
+                "query": "光标",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,7 +80,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -160,10 +161,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机/Linux/linux 软件级知识.md"
+                "file": "计算机/Linux/linux 系统与硬件级知识.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of linux 软件级知识"
+              "title": "Outline of linux 系统与硬件级知识"
             }
           },
           {
@@ -193,15 +194,16 @@
   },
   "active": "d0eadf0475f8a40e",
   "lastOpenFiles": [
+    "知识索引.md",
+    "计算机/Linux/linux 软件级知识.md",
+    "Untitled 1.md",
     "git 简易教学.md",
     "Linux文件系统详解.md",
     "计算机/数据库/mysql基础知识.md",
-    "计算机/Linux/linux 软件级知识.md",
     "计算机/Linux/linux 系统与硬件级知识.md",
     "计算机/Linux/linux 基础命令.md",
     "3D/Unity3D/base.md",
     "计算机/Web/前端/Vue/父子组件中的双向数据绑定.md",
-    "Untitled 1.md",
     "计算机/Web/前端/CSS/长度单位.md",
     "计算机/工具/Git/git基本操作.md",
     "计算机/Web/前端/CSS/css基础.md",
@@ -211,7 +213,6 @@
     "计算机/工具/VsCode 学习笔记.md",
     "Test.md",
     "计算机/Web/前端/Javascript/基础知识.md",
-    "知识索引.md",
     "论文查重原理.md",
     "记录.md",
     "计算机/工具/Git/一些理解与心得.md",
