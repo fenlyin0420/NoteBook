@@ -4,41 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "9195332ad8e723eb",
+        "id": "1257da68a298fd8a",
         "type": "tabs",
         "children": [
           {
-            "id": "bcb59904c1433dd0",
+            "id": "840e843656a0f4e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机/Linux/linux 软件级知识.md",
+                "file": "计算机/Web/前端/Vue/父子组件中的双向数据绑定.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "linux 软件级知识"
-            }
-          },
-          {
-            "id": "d0eadf0475f8a40e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "计算机/Linux/linux 系统与硬件级知识.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "linux 系统与硬件级知识"
+              "title": "父子组件中的双向数据绑定"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "光标",
+                "query": "screen",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,8 +64,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -161,10 +144,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机/Linux/linux 系统与硬件级知识.md"
+                "file": "计算机/Web/前端/Vue/父子组件中的双向数据绑定.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of linux 系统与硬件级知识"
+              "title": "Outline of 父子组件中的双向数据绑定"
             }
           },
           {
@@ -192,35 +175,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d0eadf0475f8a40e",
+  "active": "840e843656a0f4e9",
   "lastOpenFiles": [
-    "知识索引.md",
+    "计算机/Web/前端/CSS/属性.md",
+    "计算机/Web/前端/CSS/弹性盒子  flexbox.md",
+    "计算机/Web/前端/CSS/长度单位.md",
+    "计算机/Web/前端/CSS/css基础.md",
     "计算机/Linux/linux 软件级知识.md",
+    "知识索引.md",
+    "计算机/程序设计语言/C与C++/basic_concepts/头文件、库文件搜索问题.md",
+    "计算机/程序设计语言/C与C++/basic_concepts/类相关.md",
+    "计算机/Cortex-M3内核.md",
+    "Test.md",
+    "word学习.md",
+    "计算机/学习.md",
+    "计算机/Web/后端/框架/SpringBoot.md",
+    "基础课程/English/Grammer/从句.md",
+    "计算机/Linux/linux 系统与硬件级知识.md",
     "Untitled 1.md",
     "git 简易教学.md",
     "Linux文件系统详解.md",
     "计算机/数据库/mysql基础知识.md",
-    "计算机/Linux/linux 系统与硬件级知识.md",
     "计算机/Linux/linux 基础命令.md",
     "3D/Unity3D/base.md",
     "计算机/Web/前端/Vue/父子组件中的双向数据绑定.md",
-    "计算机/Web/前端/CSS/长度单位.md",
     "计算机/工具/Git/git基本操作.md",
-    "计算机/Web/前端/CSS/css基础.md",
-    "计算机/Web/前端/CSS/属性.md",
     "计算机/Web/密码学.md",
     "Untitled.md",
     "计算机/工具/VsCode 学习笔记.md",
-    "Test.md",
-    "计算机/Web/前端/Javascript/基础知识.md",
-    "论文查重原理.md",
-    "记录.md",
-    "计算机/工具/Git/一些理解与心得.md",
-    "计算机/计算机网络/基础知识.md",
-    "计算机/程序设计语言/Powershell/命令.md",
     "计算机/计算机网络/_resources/Pasted image 20241021111315.png",
-    "计算机/Web/前端/Vue/基础知识.md",
-    "计算机/计算机网络/FTP 连接案例.md",
     "_resources/Pasted image 20241017235328.png",
     "_resources/Pasted image 20241006202559.png",
     "_resources",

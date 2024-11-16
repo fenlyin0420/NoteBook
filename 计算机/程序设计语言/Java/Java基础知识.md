@@ -298,4 +298,6 @@ JVM可以自动处理，处理方式为依次调用`e.toString()` 和 `e.getStac
 # 第三方包结构
 第三方包多以 jar 包的形式存在，每一个 jar 包都是一个 classpath，再搜索类时，除了再系统指定的 classpath 下搜索，还会再指定的 jar 包中搜索。
 
-再 pom 文件中，一个组织可以有若干 jar 包，这些 jar 包的 groupId 都是相同的。不同 jar 包是以 artifactId 和 version 共同区分的，同一组织的所有 jar 包都有相同的基本报名，一般都是该组织的 groupId。
+groupId、artifactId 和 version 三个坐标决定了一个 artifact 的具体位置。artifact 本质是一个文件夹，包含 jar 包、pom 文件以及一些配置信息。当 atifact 只有一个版本时，也可以省略 version 坐标。
+
+jar 包里的包结构就是我们要导入类时需要写的包结构。
