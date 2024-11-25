@@ -9,5 +9,7 @@ npm安装的包中必须要有`Package.json`文件，该文件定义了包的相
 - `npm uninstall <packageName>` 卸载包
 - `npm update <packageName>` 更新包
 - `npm search <packageName>` 在镜像里搜索指定的包，列出匹配的包
-- `npm run <dev|serve>` 运行Vue应用, `dev`是以开发模式运行, 可以检测文件变化并重新运行
 
+# npm 换源
+- `npm config get registry` 查看当前源
+- `npm config set registry=https://registry.npmmirror.com` 换为淘宝源

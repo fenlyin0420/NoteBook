@@ -1,0 +1,165 @@
+{
+  "main": {
+    "id": "a560cff958cfcb5d",
+    "type": "split",
+    "children": [
+      {
+        "id": "5210c0f9f68f86f1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "377e149485085344",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "动态_脚本语言/python/爬虫.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "64b01ee6631889d7",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "9b950bcc3a298c63",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "aef727576da5c20c",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "a2c451368c7125d4",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "ddaa779a02d1bc8b",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "f6ffcb1ee62b7947",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "f77c629d79d4fcc6",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "动态_脚本语言/python/爬虫.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "e6e5405e8e39d28a",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "动态_脚本语言/python/爬虫.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "53624122ebbbf51f",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "动态_脚本语言/python/爬虫.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 2
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "377e149485085344",
+  "lastOpenFiles": [
+    "动态_脚本语言/python/爬虫.md",
+    "动态_脚本语言/python/matplot.md",
+    "动态_脚本语言/python/configparser.md",
+    "动态_脚本语言/python/numpy.md",
+    "动态_脚本语言/python/os.path.md",
+    "动态_脚本语言/python/pandas 库.md",
+    "动态_脚本语言/python/Pillow.md",
+    "动态_脚本语言/python/python基础知识.md",
+    "动态_脚本语言/python/threading.md",
+    "动态_脚本语言/python/tips.md",
+    "动态_脚本语言/Shell.md",
+    "动态_脚本语言/Ruby/语法.md",
+    "动态_脚本语言/AutoHotkey/基础语法.md",
+    "机器学习-计算机知识/Windows.md",
+    "机器学习-计算机知识/OpenAI Keys.md",
+    "机器学习-计算机知识/计算机相关知识.md",
+    "机器学习-计算机知识/杂项/银行关系整理.md",
+    "机器学习-计算机知识/杂项/ip地址.md",
+    "机器学习-计算机知识/杂项/数据存储格式.md",
+    "机器学习-计算机知识/杂项/浅谈图片像素_分辨率.md",
+    "python doc/Language Reference/3. Data model.md",
+    "MATLAB/有用的函数.md",
+    "Opencv-python.md",
+    "English/words.md",
+    "Content_type.canvas",
+    "api抓取.md",
+    "渗透测试基本知识.md"
+  ]
+}

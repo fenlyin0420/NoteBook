@@ -244,8 +244,108 @@ java中的权限修饰符限制等级从低到高有：
 5. 私有方法
 
 ## 异常与错误
+异常需要被捕获，检查性异常在编译期间就可以被发现，如果没有捕获或向上抛出检查性异常，编译不同过。
+运行时异常只有在运行期间才可以被发现，因此必须尽可能预判可能出现的运行时异常，并捕获它，避免程序异常终止。
 ![](Pasted%20image%2020240609224409.png)
 
+### 异常捕获
+#### **默认异常信息格式**
+
+当 JVM 捕获到未处理的异常时，它打印的异常信息通常是这样的：
+
+```
+Exception in thread "线程名" 异常类型: 异常描述
+    at 堆栈信息1
+    at 堆栈信息2
+    ...
+```
+
+**关键部分解释：**
+
+- `Exception in thread "线程名"`：表示发生异常的线程名称。
+    - 如果是主线程，显示为 `"main"`。
+    - 如果是自定义线程，则显示线程的名称。
+- `异常类型`：例如 `NullPointerException`、`ArrayIndexOutOfBoundsException` 等。
+- `异常描述`：异常附带的消息，例如 `This is an uncaught exception!`。
+- 堆栈信息：列出异常发生时调用栈中的方法和代码位置。
+#### **是否总是 JVM 捕获？**
+
+- 如果异常信息的开头是 `Exception in ...`，说明异常发生后没有被程序中的 `try-catch` 块捕获，直接传递到 JVM 的异常处理器。
+- 如果程序已经捕获了异常并处理，JVM 默认的异常捕获机制不会参与。例如，在以下代码中，异常虽然被捕获，但堆栈信息仍然可以通过手动调用 `printStackTrace()` 输出：
+
+```java
+public class ExceptionHandlingDemo {
+    public static void main(String[] args) {
+        try {
+            throw new RuntimeException("Caught by program!");
+        } catch (Exception e) {
+            System.out.println("Program caught the exception:");
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+**输出**：
+
+```
+Program caught the exception:
+java.lang.RuntimeException: Caught by program!
+    at ExceptionHandlingDemo.main(ExceptionHandlingDemo.java:5)
+```
+
+- 这里并没有 `Exception in ...` 的前缀，因为异常被用户代码捕获了。
+#### **示例：JVM 捕获未处理异常**
+
+```java
+public class UncaughtExceptionDemo {
+    public static void main(String[] args) {
+        throw new IllegalArgumentException("This exception is uncaught!");
+    }
+}
+```
+
+**输出**：
+
+```
+Exception in thread "main" java.lang.IllegalArgumentException: This exception is uncaught!
+    at UncaughtExceptionDemo.main(UncaughtExceptionDemo.java:3)
+```
+
+**解释**：
+
+- 这里的 `Exception in thread "main"` 说明主线程中有未捕获的异常，最终由 JVM 捕获并处理。
+#### **多线程场景下的表现**
+
+对于多线程环境，JVM 捕获异常时会标明具体的线程：
+
+```java
+public class MultithreadExceptionDemo {
+    public static void main(String[] args) {
+        Thread thread = new Thread(() -> {
+            throw new RuntimeException("Exception in custom thread!");
+        });
+        thread.start();
+    }
+}
+```
+
+**输出**：
+
+```
+Exception in thread "Thread-0" java.lang.RuntimeException: Exception in custom thread!
+    at MultithreadExceptionDemo.lambda$main$0(MultithreadExceptionDemo.java:5)
+    at java.base/java.lang.Thread.run(Thread.java:833)
+```
+
+**解释**：
+
+- `Exception in thread "Thread-0"` 说明异常发生在一个名为 `"Thread-0"` 的自定义线程中。
+#### **总结**
+
+- **开头为 `Exception in ...` 的异常信息，是 JVM 捕获未处理异常后打印的默认信息。**
+- 如果异常被用户代码捕获并处理，则不会出现 `Exception in ...` 的前缀。
+- 多线程情况下，异常信息会包含发生异常的具体线程名称，帮助定位问题。
 ### 主动抛出异常
 可以通过`throw`关键字主动抛出内置异常或自定义异常。语法为：
 `throw new <ExceptionName>(<Message>);` 构造函数参数为异常的信息。
@@ -260,8 +360,135 @@ class myException extends Exception{
 }
 ```
 
+### 抛出嵌套异常
+是的，**嵌套异常**确实通常通过**“捕获后，重新抛出”**的方式实现。这种方式可以保留原始异常的上下文信息，同时添加额外的信息以便更好地描述当前异常的语义。
+
+#### **嵌套异常的实现方式**
+
+嵌套异常的基本模式如下：
+
+1. 在一个 `try-catch` 块中捕获原始异常。
+2. 在 `catch` 块中，使用捕获的异常作为**原因（cause）**，创建一个新的异常对象。
+3. 将新异常抛出（`throw`）。
+
+以下是实现示例：
+
+```java
+public class NestedExceptionDemo {
+    public static void main(String[] args) {
+        try {
+            outerMethod();
+        } catch (Exception e) {
+            // 捕获最终的嵌套异常，打印堆栈信息
+            e.printStackTrace();
+        }
+    }
+
+    public static void outerMethod() {
+        try {
+            innerMethod();
+        } catch (Exception e) {
+            // 捕获异常后重新抛出，形成嵌套异常
+            throw new RuntimeException("Exception in outerMethod", e);
+        }
+    }
+
+    public static void innerMethod() {
+        // 抛出初始异常
+        throw new IllegalArgumentException("Exception in innerMethod");
+    }
+}
+```
+
+#### **输出解析**
+
+运行上述代码，输出如下：
+
+```
+java.lang.RuntimeException: Exception in outerMethod
+    at NestedExceptionDemo.outerMethod(NestedExceptionDemo.java:13)
+    at NestedExceptionDemo.main(NestedExceptionDemo.java:7)
+Caused by: java.lang.IllegalArgumentException: Exception in innerMethod
+    at NestedExceptionDemo.innerMethod(NestedExceptionDemo.java:18)
+    at NestedExceptionDemo.outerMethod(NestedExceptionDemo.java:11)
+    ... 1 more
+```
+
+**堆栈分析**：
+
+- `RuntimeException: Exception in outerMethod` 是外部方法抛出的新异常。
+- `Caused by: IllegalArgumentException: Exception in innerMethod` 是嵌套在其中的原始异常，显示其初始堆栈信息。
+
+通过这种嵌套关系，可以轻松追踪问题的发生链条。
+
+
+#### **嵌套异常的实现关键**
+
+Java 中 `Throwable` 提供了内置支持，帮助实现嵌套异常：
+
+1. **构造方法支持传入原因（cause）**
+    
+    - `Throwable(String message, Throwable cause)`：创建异常时同时指定消息和原始异常。
+    - `Throwable(Throwable cause)`：仅指定原始异常。
+2. **获取原始异常**
+    
+    - 使用 `getCause()` 方法获取嵌套的原始异常。
+
+
+#### **重新抛出 vs 嵌套异常**
+
+##### 1. **简单重新抛出**
+
+直接重新抛出捕获的异常，不改变其类型和堆栈信息：
+
+```java
+try {
+    throw new IllegalArgumentException("Original Exception");
+} catch (IllegalArgumentException e) {
+    throw e; // 直接抛出，不会嵌套
+}
+```
+
+这种情况下，异常的堆栈信息不会发生变化。
+
+
+##### 2. **嵌套异常的意义**
+
+重新抛出时包装原始异常，可以提供更清晰的上下文信息。例如：
+
+- 在业务逻辑层捕获低层异常（如数据库连接失败），并抛出语义化更明确的异常（如“无法加载用户数据”）。
+- 通过嵌套异常保留原始异常的堆栈信息，方便问题定位。
+
+示例：
+
+```java
+try {
+    throw new SQLException("Database connection failed");
+} catch (SQLException e) {
+    throw new RuntimeException("Failed to load user data", e);
+}
+```
+
+输出：
+
+```
+java.lang.RuntimeException: Failed to load user data
+    at ...
+Caused by: java.sql.SQLException: Database connection failed
+    at ...
+```
+
+#### **总结**
+
+1. **嵌套异常**是通过捕获原始异常后重新抛出实现的。
+    - 使用 `Throwable` 的 `cause` 参数链接新旧异常。
+2. 嵌套异常的好处k'k：
+    - 传递异常链，保留。
+    - 提供更具体的语义信息，便于问题定位。
+3. 在复杂系统中，嵌套异常是非常常见的设计模式，特别是在多层架构中（如 DAO 层到业务层，再到控制层）。
 ### 异常分类
 #### 检查性异常
+即在编译阶段就能够检测到的异常。
 需要开发人员手动处理或者手动“甩锅”给JVM处理，否则编译不通过。也就是说，可能出现检测性异常的代码块，必须要再try语句块中，或者通过`throws`关键字交给JVM处理。
 
 | Exception                  | Description                                                                |

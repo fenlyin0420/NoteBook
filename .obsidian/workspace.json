@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机/Web/前端/Vue/父子组件中的双向数据绑定.md",
-                "mode": "source",
+                "file": "计算机/程序设计语言/Shell.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "父子组件中的双向数据绑定"
+              "title": "Shell"
             }
           }
         ]
@@ -144,10 +144,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "计算机/Web/前端/Vue/父子组件中的双向数据绑定.md"
+                "file": "知识索引.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 父子组件中的双向数据绑定"
+              "title": "Outline of 知识索引"
             }
           },
           {
@@ -165,7 +165,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,6 +178,15 @@
   },
   "active": "840e843656a0f4e9",
   "lastOpenFiles": [
+    "计算机/程序设计语言/路径.md",
+    "计算机/Cortex-M3内核.md",
+    "计算机/Linux文件系统详解.md",
+    "计算机/ComputerGraphics.md",
+    "计算机/clash工作原理.md",
+    "Test.md",
+    "Excalidraw/clash工作原理.md",
+    "计算机/Web/前端/Vue/父子组件中的双向数据绑定.md",
+    "clash工作原理.md",
     "计算机/Web/前端/CSS/属性.md",
     "计算机/Web/前端/CSS/弹性盒子  flexbox.md",
     "计算机/Web/前端/CSS/长度单位.md",
@@ -185,8 +195,6 @@
     "知识索引.md",
     "计算机/程序设计语言/C与C++/basic_concepts/头文件、库文件搜索问题.md",
     "计算机/程序设计语言/C与C++/basic_concepts/类相关.md",
-    "计算机/Cortex-M3内核.md",
-    "Test.md",
     "word学习.md",
     "计算机/学习.md",
     "计算机/Web/后端/框架/SpringBoot.md",
@@ -196,13 +204,6 @@
     "git 简易教学.md",
     "Linux文件系统详解.md",
     "计算机/数据库/mysql基础知识.md",
-    "计算机/Linux/linux 基础命令.md",
-    "3D/Unity3D/base.md",
-    "计算机/Web/前端/Vue/父子组件中的双向数据绑定.md",
-    "计算机/工具/Git/git基本操作.md",
-    "计算机/Web/密码学.md",
-    "Untitled.md",
-    "计算机/工具/VsCode 学习笔记.md",
     "计算机/计算机网络/_resources/Pasted image 20241021111315.png",
     "_resources/Pasted image 20241017235328.png",
     "_resources/Pasted image 20241006202559.png",
