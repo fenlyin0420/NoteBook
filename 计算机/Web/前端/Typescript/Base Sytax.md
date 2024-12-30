@@ -48,4 +48,4 @@ var [x, y] = arr;
 
 
 # interface
-接口是一个抽象的Object，接口提供了标准化、规范化的抽象属性和抽象方法，供其他类型实现。接口仅仅是TypeScript的一部分，JavaScript中没有接口。
+接口是一个抽象的Object，接口提供了标准化、规范化的抽象属性和抽象方法，供其他类型实现。接口仅仅是TypeScript的一部分，JavaScript中没有接口

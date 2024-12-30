@@ -48,9 +48,31 @@ gcc -x c++ main.cpp func.cpp -lstdc++ -o main.exe
 ## 生成动态库
 也称**运行时**：`xxx.so | xxx.dll`
 1. `gcc -fPIC -c file.c -o file.o` 编译源文件为位置无关代码(目标文件)
-2. `gcc -shared -o file.o libmyshared` 通过 `-shared` 创建动态库
-
+2. `gcc -shared -o libmyshared file.o`  通过 `-shared` 创建动态库
+ 
 ## 链接
+```shell
+gcc main.c -L<lib_path> -l<lib_name> -o main.exe
+# libHello.lib, you should:
+gcc main.c -L. -lHello -o main.exe
+```
+- gcc will auto add prefix `lib` and suffix `.lib` or `.a`
+- Linux 平台
+
+在 **Linux(GNU)** 平台，`ld`严格遵守自动添加前缀后缀的规则，即`gcc -L -ladd`，它只会去搜索`libadd.so`动态库文件和`libadd.a`静态库文件。
+
+在  **Windows(MinGW64)** 平台，因为windows平台文件后缀的不同，`ld`的规则会有所变化：`gcc -L. -ladd`将会搜索以下文件（先动态库，再静态库）：
+- `add.dll`
+- `libadd.dll`
+- `libadd.so`
+- `add.lib`
+- `libadd.lib`
+- `libadd.a`
+可以发现，如果是以UNIX风格的后缀的话，前缀必须要有，但如果是以Windows风格的后缀的话，前缀可有可无。
+
+以上是链接器会搜索的文件，除了让链接器主动去搜索，还可以通过`:<file_name>`的形式手动指定库文件，例如`gcc main.c -L. -l:add` 将会在当前目录搜索`add`库文件。
+
+
 **对于C++标准库文件，编译器通常会自动进行链接**。这是通过编译器和链接器内置的知识和配置来实现的。
 
 具体来说，当你使用C++编译器（如GCC或Clang）编译一个源文件时，编译器会识别出源文件中使用的标准库函数和特性。在编译的后期阶段，编译器会生成一些需要链接器处理的中间代码或目标文件。这些目标文件会包含对标准库中函数的引用。

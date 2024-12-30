@@ -1,0 +1,11 @@
+{
+  "vimMode": true,
+  "readableLineLength": true,
+  "showLineNumber": true,
+  "spellcheck": false,
+  "alwaysUpdateLinks": true,
+  "trashOption": "local",
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "./_resources",
+  "tabSize": 4
+}

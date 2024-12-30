@@ -12,3 +12,6 @@ fourcc = cv.VideoWriter_fourcc(*"XVID")
 ## namespace and scoop
 - Assignments do not copy data, they just bind names to objects.
 - nonlocal scoops are the local scoops of the enclosing functions.
+
+# good statement
+- An object's type determines the operations that the object surpports, and also defines the possible values for the objects of that type.

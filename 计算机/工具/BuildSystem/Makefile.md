@@ -30,6 +30,10 @@ When we run `make` again, the following set of steps happens:
 - When  depedency `blah.c` is not exist, if target `blah.c` exists, make will run `blah.c` target first. 
 
 ## variable
+### define variable
+`IDENTIFIER = <variable_content>`
+All the content on `=` right will be variable's value(including white character, eg. whitespace, tab etc.)
+### use variable
 - `$@` 代表当前target。
 - `$<` 代表第一个prerequisites。
 - `$^` 代表所有prerequisites。

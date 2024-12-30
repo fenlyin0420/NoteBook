@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "48c48af5c9e1bf77",
+        "id": "d36d2d95cf9071e1",
         "type": "tabs",
         "children": [
           {
-            "id": "31133712acd11cd6",
+            "id": "087b1d99b09d05c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OBJ文件.md",
+                "file": "Blender/blender 常用功能.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OBJ文件"
+              "title": "blender 常用功能"
             }
           }
         ]
@@ -93,7 +93,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "collapseAll": false,
+                "file": "Blender/blender 常用功能.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -102,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for blender 常用功能"
             }
           },
           {
@@ -136,17 +137,19 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "Blender/blender 常用功能.md"
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of blender 常用功能"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,12 +161,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "31133712acd11cd6",
+  "active": "087b1d99b09d05c2",
   "lastOpenFiles": [
+    "Blender/骨骼.md",
     "MMD骨骼.md",
     "OBJ文件.md",
-    "Shader 学习笔记.md",
     "VAM.md",
+    "Shader 学习笔记.md",
+    "Blender/_resources/Pasted image 20241209135129.png",
+    "Blender/科学布线.md",
+    "Blender/blender 常用功能.md",
+    "Blender/修改器.md",
+    "Blender/文件、数据与资产.md",
+    "Blender/_resources/Pasted image 20241207225134.png",
+    "Blender/_resources/Pasted image 20241207225239.png",
+    "Blender/_resources/Pasted image 20241207225313.png",
+    "Blender/_resources/Pasted image 20241207225148.png",
+    "学习记录.md",
+    "Pasted image 20241207224735.png",
+    "Pasted image 20241207224739.png",
+    "Pasted image 20241207224723.png",
+    "_resources/Pasted image 20240717180508.png",
+    "_resources/Pasted image 20240717180048.png",
+    "Blender/材质与shader.md",
+    "3D基础.md",
     "计算机颜色系统.md"
   ]
 }

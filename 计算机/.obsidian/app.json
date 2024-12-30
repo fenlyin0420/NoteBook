@@ -1,6 +1,6 @@
 {
   "vimMode": true,
-  "spellcheck": false,
+  "spellcheck": true,
   "showLineNumber": true,
   "alwaysUpdateLinks": true,
   "useMarkdownLinks": true,
@@ -16,5 +16,6 @@
     "downscalePercent": 100
   },
   "attachmentFolderPath": "./_resources",
-  "readableLineLength": false
+  "readableLineLength": false,
+  "newFileLocation": "current"
 }
