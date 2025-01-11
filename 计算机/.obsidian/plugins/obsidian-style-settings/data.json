@@ -13,5 +13,6 @@
   "Components@@folder-font-bold": true,
   "Components@@colorful-folder": true,
   "Components@@file-icon-remove": false,
-  "Editor@@text-align-justify": true
+  "Editor@@text-align-justify": true,
+  "Plugin@@colorful-checkbox": true
 }

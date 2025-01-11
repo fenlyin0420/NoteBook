@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3b01838d6ed0ef6f",
+        "id": "aa71dbcb7ffdb32f",
         "type": "tabs",
         "children": [
           {
-            "id": "de1988c4a1cfbad4",
+            "id": "dffa8628cc84142d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "计算机/程序设计语言/Go/GO 基础.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "GO 基础"
+              "title": "New tab"
             }
           }
         ]
@@ -143,11 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "计算机/程序设计语言/Go/GO 基础.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of GO 基础"
+              "title": "Outline"
             }
           },
           {
@@ -175,10 +168,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de1988c4a1cfbad4",
+  "active": "c904818669c7eabb",
   "lastOpenFiles": [
-    "计算机/程序设计语言/Go/经验技巧.md",
     "计算机/程序设计语言/Go/GO 基础.md",
+    "计算机/程序设计语言/Go/经验技巧.md",
     "计算机/程序设计语言/Go",
     "计算机/程序设计语言/go.md",
     "计算机/计算机网络/基础知识.md",

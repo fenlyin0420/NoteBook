@@ -203,7 +203,7 @@ SHOW VARIABLES LIKE 'datadir';
 # 修改用户密码
 - 8.0 之前
 ```MySQL
-UPDATE mysq.user SET authentication_string = PASSWORD('123456') WHERE user = 'root';
+UPDATE mysql.user SET authentication_string = PASSWORD('123456') WHERE user = 'root';
 ```
 
 - 8.0 之后
