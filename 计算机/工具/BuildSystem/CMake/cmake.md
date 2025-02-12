@@ -9,7 +9,7 @@
 `set(CMAKE_INSTALL_PREFIX /home/user/my_project_install)`
 
 # find_package
-成功后定义一下变量
+成功后定义以下变量
 - `<PackageName>_LIBRARIES`
 
 # 使用库的方法
@@ -24,3 +24,30 @@ Eigen3 库的架构是：所有的源码均写在头文件中，需要访问哪�
 
 # 改变构建工具
 1. 再调用命令时传参：`cmake <dir> -G "Unix Makefiles"
+
+# 指定编译器
+定义变量`CMAKE_C_COMPILER` 和 `CMAKE_CXX_COMPILER`。可以在CMakeList中使用set定义，也可以在命令行中定义。
+- 在文件中定义
+```cmake
+# 指定 C 编译器
+set(CMAKE_C_COMPILER "C:/Path/To/gcc.exe")
+
+# 指定 C++ 编译器
+set(CMAKE_CXX_COMPILER "C:/Path/To/g++.exe")
+```
+
+- 在命令行中定义
+```shell
+cmake -DCMAKE_C_COMPILER="C:/Path/To/gcc.exe" -DCMAKE_CXX_COMPILER="C:/Path/To/g++.exe" ..
+```
+
+# Cmake install 头文件
+cmake 构建完项目后，可能没有头文件，需要手动执行`cmake --install .` 安装头文件，前提是`CmakeLists.txt`中定义了`install`命令。
+```cmake
+# 生成配置
+cmake -DCMAKE_INSTALL_PREFIX=./install -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
+# 构建
+cmake --build . --config Release
+# 安装头文件
+cmake --install .
+```

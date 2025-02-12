@@ -5,8 +5,8 @@
 
 **配置**：引用资源并对其进行排列组合
 ## 文件格式
-- `.vab .vaj .vam`服饰与毛发
-- `.vmb .vmi`变形
+- `.vab .vaj .vam`服饰与毛发, 多为`.vam`
+- `.vmb .vmi`变形, 多为`.vim`
 - `.assetbundle`外部资源(AB包)，在`/Custom/Assets`中
 
 ## 理解

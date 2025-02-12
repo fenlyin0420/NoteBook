@@ -147,7 +147,7 @@ echo [$a+$b] // 不能有多余空格
 # 流程控制
 ### if-else if-else
 ``` bash
-if condition1
+if condition1;
 then
 	command1
 else if
