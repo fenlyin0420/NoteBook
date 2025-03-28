@@ -1,1 +1,0 @@
-The JSON object is human-readable, but it doesn’t include any context or metadata. There’s no way to tell from looking at the object what the keys mean or what the possible inputs are.

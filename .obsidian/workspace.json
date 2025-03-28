@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1f950e27c9eba305",
+        "id": "c54a59b2284ee1ae",
         "type": "tabs",
         "children": [
           {
-            "id": "b5a747a4196c7424",
+            "id": "dfb06dc66761530f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "汇编语言/常用指令.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "常用指令"
+              "title": "New tab"
             }
           }
         ]
@@ -55,7 +50,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -69,7 +64,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 353.5
   },
   "right": {
     "id": "a5901c147f63c5fb",
@@ -145,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "汇编语言/常用指令.md",
+                "file": "WebView/01. Atom Control.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 常用指令"
+              "title": "Outline of 01. Atom Control"
             }
           },
           {
@@ -162,16 +157,6 @@
               "state": {},
               "icon": "lucide-file",
               "title": "Plugin no longer active"
-            }
-          },
-          {
-            "id": "237ca399b33d2887",
-            "type": "leaf",
-            "state": {
-              "type": "smtcmp-chat-view",
-              "state": {},
-              "icon": "wand-sparkles",
-              "title": "Smart composer chat"
             }
           }
         ],
@@ -186,40 +171,42 @@
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "smart-composer:Open smart composer": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "844640727a1190f7",
+  "active": "c904818669c7eabb",
   "lastOpenFiles": [
-    "汇编语言/x86_64汇编.md",
-    "汇编语言/常用指令.md",
-    "汇编语言",
-    "计算机组成原理/基础知识.md",
-    "硬件/Cortex-M3内核.md",
-    "硬件/CPU.md",
-    "硬件/Intel.md",
-    "硬件/刷机.md",
-    "工具/Compiler/GNU.md",
-    "图形学/Untitled.md",
-    "图形学/_resources/Pasted image 20250211134900.png",
+    "工具/BuildSystem/outline.md",
+    "工具/Compiler/MSVC.md",
+    "工具/BuildSystem/Make.md",
+    "工具/BuildSystem/CMake/构建C++项目.md",
+    "程序设计语言/Shell/Powershell/脚本语法.md",
+    "工具/Compiler/默认头文件库文件路径.md",
+    "工具/BuildSystem/CMake/cmake.md",
+    "工具/BuildSystem/CMake/CMakeLists.md",
+    "图形学/base.md",
     "图形学/ComputerGraphics.md",
-    "计算机/数据库/应用.md",
-    "计算机/数据库/数据库理论知识.md",
-    "计算机/工具/Compiler/默认头文件库文件路径.md",
-    "计算机/工具/Compiler/GNU.md",
-    "计算机/工具/Compiler/MSVC.md",
-    "计算机/工具/BuildSystem/CMake/cmake.md",
-    "3D/Blender/骨骼.md",
-    "3D/Shader 学习笔记.md",
-    "3D/OBJ 文件格式.md",
-    "3D/MMD骨骼.md",
-    "3D/3D基础.md",
-    "计算机/Web/前端/Vue/基础知识.md",
-    "计算机/Linux 部署 mihomo 内核.md",
-    "计算机/将mysql数据库迁移到云服务器.md",
-    "WebView/01. Atom Control.md",
-    "Linux内核加密文件系统（eCryptfs）.md",
+    "Web/前端/Javascript/事件循环.md",
+    "Web/前端/Javascript/_resources/Pasted image 20250328153021.png",
+    "Web/前端/Javascript/_resources",
+    "Web/前端/Javascript/基础知识.md",
+    "程序设计语言/Shell/Powershell/Cmdlets.md",
+    "程序设计语言/C与C++/basic_concepts/基本数据类型.md",
+    "程序设计语言/C与C++/basic_concepts/头文件、库文件搜索问题.md",
+    "程序设计语言/C与C++/basic_concepts/指针常量与常量指针.md",
+    "程序设计语言/C与C++/basic_concepts/无符号数的溢出自动取模.md",
+    "程序设计语言/C与C++/basic_concepts/类相关.md",
+    "Web/前端/Vue/构建工具的区别.md",
+    "计算机网络/基础知识.md",
+    "计算机网络/TCP协议.md",
+    "计算机网络/计网实验.md",
+    "杂记.md",
+    "Web/前端/CSS/CSS selector.md",
+    "你好.md",
+    "密码学.md",
+    "Untitled",
+    "汇编语言",
+    "图形学/_resources/Pasted image 20250211134900.png",
     "WebView/_resources/atomcomplyspeed-gif 1.383253",
     "WebView/_resources/pasted-image-0-46-png 1.383252",
     "WebView/_resources/pasted-image-0-45-png 1.383251",
@@ -227,8 +214,6 @@
     "WebView/_resources/pasted-image-0-43-png 1.383248",
     "WebView/_resources/atomlock-gif 1.383247",
     "WebView/_resources/pasted-image-0-42-png 1.383246",
-    "WebView/_resources/pasted-image-0-41-png 1.383245",
-    "WebView/_resources/atomhold-gif 1.383244",
     "计算机/图形学/_resources/Pasted image 20250210190524.png",
     "计算机/图形学/_resources/Pasted image 20250210141126.png",
     "计算机/图形学/_resources/Pasted image 20250210140843.png",
@@ -237,7 +222,6 @@
     "计算机/计算机网络/_resources/Pasted image 20241021111315.png",
     "_resources/Pasted image 20241017235328.png",
     "_resources/Pasted image 20241006202559.png",
-    "计算机/程序设计语言/Python/_resources/Pasted image 20241004160410.png",
     "Untitled.canvas"
   ]
 }

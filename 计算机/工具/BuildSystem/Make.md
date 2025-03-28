@@ -49,3 +49,17 @@ target:
 	@gcc main.c -o target
 ```
 make executed this command, but it was not printed to the terminal.
+
+## 问题记录
+```Makefile
+# $(info $(SHELL))
+main.exe: main.cu
+    nvcc.exe -o main.exe -Wno-deprecated-gpu-targets main.cu
+clean:
+    rm -f main.lib main.exe main.exp
+```
+会报错，类似问题：https://stackoverflow.com/questions/33674973/makefile-error-make-e-2-the-system-cannot-find-the-file-specified
+
+windows 上，make 默认使用`cmd.exe`作为终端，因此，`rm`命令不可用，因该使用`del`命令。
+
+另外，使用`SHELL := powershell.exe`等改变了make的终端，但是环境变量没有导入(?)，所以即使改变终端，也无法很轻易的在windows上使用类Unix风格的命令。
