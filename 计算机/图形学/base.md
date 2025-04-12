@@ -42,6 +42,15 @@ $$
 # 视图变换
 将标准立方体变换到屏幕空间
 
+## 窗口变换
+$$
+\begin{bmatrix}
+\frac{x_{h}^{\prime}-x_{l}^{\prime}}{x_{h}-x_{l}} & 0 & 0 & \frac{x_{l}^{\prime}x_{h}-x_{h}^{\prime}x_{l}}{x_{h}-x_{l}} \\
+0 & \frac{y_{h}^{\prime}-y_{l}^{\prime}}{y_{h}-y_{l}} & 0 & \frac{y_{l}^{\prime}y_{h}-y_{h}^{\prime}y_{l}}{y_{h}-y_{l}} \\
+0 & 0 & \frac{z_{h}^{\prime}-z_{l}^{\prime}}{z_{h}-z_{l}} & \frac{z_{l}^{\prime}z_{h}-z_{h}^{\prime}z_{l}}{z_{h}-z_{l}} \\
+0 & 0 & 0 & 1
+\end{bmatrix}.
+$$
 ## 光栅化
 
 - 垂直视野

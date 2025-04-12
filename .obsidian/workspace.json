@@ -4,17 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "c54a59b2284ee1ae",
+        "id": "d81a16358e295888",
         "type": "tabs",
         "children": [
           {
-            "id": "dfb06dc66761530f",
+            "id": "d64db09f19bf6074",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "image",
+              "state": {
+                "file": "_resources/Pasted image 20241017235328.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20241017235328"
             }
           }
         ]
@@ -64,7 +66,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.5
+    "width": 241.5
   },
   "right": {
     "id": "a5901c147f63c5fb",
@@ -140,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WebView/01. Atom Control.md",
+                "file": "prompt enginerring.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 01. Atom Control"
+              "title": "Outline of prompt enginerring"
             }
           },
           {
@@ -164,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,35 +179,36 @@
   },
   "active": "c904818669c7eabb",
   "lastOpenFiles": [
-    "工具/BuildSystem/outline.md",
-    "工具/Compiler/MSVC.md",
-    "工具/BuildSystem/Make.md",
-    "工具/BuildSystem/CMake/构建C++项目.md",
-    "程序设计语言/Shell/Powershell/脚本语法.md",
-    "工具/Compiler/默认头文件库文件路径.md",
-    "工具/BuildSystem/CMake/cmake.md",
-    "工具/BuildSystem/CMake/CMakeLists.md",
-    "图形学/base.md",
-    "图形学/ComputerGraphics.md",
-    "Web/前端/Javascript/事件循环.md",
+    "_resources/Pasted image 20241006202559.png",
+    "计算机/Linux/渗透测试基本知识.md",
+    "计算机/Linux/进程管理.md",
+    "计算机/汇编语言/x86_64汇编.md",
+    "计算机/汇编语言/常用指令.md",
+    "计算机/程序设计语言/Batch/脚本语法.md",
+    "计算机/程序设计语言/Batch/命令.md",
+    "计算机/程序设计语言/CSharp/Csharp 基础知识.md",
+    "计算机/程序设计语言/CSharp/CSharp权限.md",
+    "计算机/程序设计语言/C与C++/basic_concepts/printf格式化输出简单总结.md",
+    "计算机/程序设计语言/C与C++/basic_concepts/优先队列中仿函数的理解.md",
+    "计算机/程序设计语言/C与C++/basic_concepts/头文件、库文件搜索问题.md",
+    "计算机/程序设计语言/C与C++/basic_concepts/指针常量与常量指针.md",
+    "计算机/程序设计语言/C与C++/basic_concepts/无符号数的溢出自动取模.md",
+    "计算机/程序设计语言/C与C++/basic_concepts/类相关.md",
+    "计算机/程序设计语言/C与C++/basic_concepts/cin 输入.md",
+    "计算机/程序设计语言/C与C++/templates/计算.md",
+    "计算机/程序设计语言/C与C++/basic_concepts/Cpp Expression.md",
+    "计算机/程序设计语言/C与C++/Tips.md",
+    "计算机/程序设计语言/C与C++/C++STL/string.md",
+    "计算机/程序设计语言/C与C++/C++STL/Algorithm.md",
+    "计算机/程序设计语言/C与C++/C++STL/map.md",
+    "计算机/程序设计语言/C与C++/C++STL/numeric.md",
+    "计算机/程序设计语言/C与C++/C++STL/queue.md",
+    "计算机/程序设计语言/C与C++/C++STL/set.md",
+    "计算机/程序设计语言/C与C++/C++STL/模型生成.md",
+    "计算机/程序设计语言/Shell/Bash",
+    "操作系统",
     "Web/前端/Javascript/_resources/Pasted image 20250328153021.png",
     "Web/前端/Javascript/_resources",
-    "Web/前端/Javascript/基础知识.md",
-    "程序设计语言/Shell/Powershell/Cmdlets.md",
-    "程序设计语言/C与C++/basic_concepts/基本数据类型.md",
-    "程序设计语言/C与C++/basic_concepts/头文件、库文件搜索问题.md",
-    "程序设计语言/C与C++/basic_concepts/指针常量与常量指针.md",
-    "程序设计语言/C与C++/basic_concepts/无符号数的溢出自动取模.md",
-    "程序设计语言/C与C++/basic_concepts/类相关.md",
-    "Web/前端/Vue/构建工具的区别.md",
-    "计算机网络/基础知识.md",
-    "计算机网络/TCP协议.md",
-    "计算机网络/计网实验.md",
-    "杂记.md",
-    "Web/前端/CSS/CSS selector.md",
-    "你好.md",
-    "密码学.md",
-    "Untitled",
     "汇编语言",
     "图形学/_resources/Pasted image 20250211134900.png",
     "WebView/_resources/atomcomplyspeed-gif 1.383253",
@@ -213,7 +217,6 @@
     "WebView/_resources/pasted-image-0-44-png 1.383250",
     "WebView/_resources/pasted-image-0-43-png 1.383248",
     "WebView/_resources/atomlock-gif 1.383247",
-    "WebView/_resources/pasted-image-0-42-png 1.383246",
     "计算机/图形学/_resources/Pasted image 20250210190524.png",
     "计算机/图形学/_resources/Pasted image 20250210141126.png",
     "计算机/图形学/_resources/Pasted image 20250210140843.png",
@@ -221,7 +224,6 @@
     "3D/_resources/Pasted image 20250125000938.png",
     "计算机/计算机网络/_resources/Pasted image 20241021111315.png",
     "_resources/Pasted image 20241017235328.png",
-    "_resources/Pasted image 20241006202559.png",
     "Untitled.canvas"
   ]
 }

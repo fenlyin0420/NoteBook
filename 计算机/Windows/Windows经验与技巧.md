@@ -1,3 +1,19 @@
+# 软链接与硬链接
+- `mklink [/d] <link> <target>`
+```
+mklink C:\softlink\file.txt C:\original\file.txt
+mklink /d C:\softlink\folder C:\original\folder
+```
+- `mklink /h <link> <target>`
+`mklink`只能在cmd中使用，无法在powershell中使用。
+
+硬链接只能针对文件，不能为目录创建硬链接，并且硬链接只能在同一文件系统（同一磁盘分区）中创建。
+另外，还可以使用 `fsutil hardlink create` 命令来创建硬链接，语法为:
+- `fsutil hardlink create NewFileName ExistingFileName`
+`NewFileName` 是要创建硬链接的文件名称，`ExistingFileName` 是原文件的名称。
+
+
+- `fsutil hardlink list <file>`  列出文件所有的硬链接
 # winget
 ## 换源
 - `winget source remove <name>` 移除某个名为 `<name>` 的源
@@ -188,12 +204,13 @@ Windows Registry Editor Version 5.00
 字符编码是将二进制与字符一一对应，对应法则本质就是一个二元关系：`{<binary, char>}`。我们将这个关系称为编码，将`char`所组成的集合称为字符集。例如，在ascill编码下，其字符集共有128个元素。
 
 ## GB2312 与 UTF-8 之间的乱码
-文件以 GB2312 编码保存, 再以 UTF-8 编码打开, 乱码大多表现为菱形符号。
+文件以 GB2312 编码保存, 再以 UTF-8 编码打开（即用utf-8解码GB2312）, 乱码大多表现为菱形符号。
 ![乱码](Pasted%20image%2020240912123406.png)
 ![ 原码](Pasted%20image%2020240912123431.png)
 例如, 对"生成代码"四个字符, 使用 GB2312 编码保存, 再使用 UTF-8 编码打开, 如下, 和上述图形界面一致。
 ![](Pasted%20image%2020240912123503.png)
 ![](Pasted%20image%2020240912123519.png)
+
 
 ## FQA
 1. 为什么图形界面, 有的中文字符显示正常, 有的却是乱码？
